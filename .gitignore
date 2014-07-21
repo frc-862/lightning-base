@@ -14,3 +14,8 @@
 # Metadata
 *.aliases
 *.lvlps
+
+# Other artifacts
+Builds
+~*.*
+
