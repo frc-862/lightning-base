@@ -1,4 +1,8 @@
 lightning-base
 ==============
 
-Base code for Lightning robotics 
+Build log
+
+Prior to 2 Aug, dashboard and an empty project were created
+
+2 Aug - New communications data flow from teleop to drive train code was validated. Still no shifting, but we are successfully sending messages from teleop to a period VI and getting responsive control on the cRIO (will only be better on the roboRIO). Had a minor scare when the axis on the joysticks were configured wrong and it appeared that the comm was not working well or at all, once fixed everything worked as expected.
