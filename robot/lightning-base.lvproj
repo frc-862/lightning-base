@@ -131,16 +131,19 @@ DirectoryIndex index.htm
 			<Item Name="Motor Begin.vi" Type="VI" URL="../Lightning/Motor Begin.vi"/>
 			<Item Name="ButtonRecieve.vi" Type="VI" URL="../Lightning/ButtonRecieve.vi"/>
 			<Item Name="ButtonSend.vi" Type="VI" URL="../Lightning/ButtonSend.vi"/>
-			<Item Name="JoystickRecieve.vi" Type="VI" URL="../Lightning/JoystickRecieve.vi"/>
-			<Item Name="JoystickSend.vi" Type="VI" URL="../Lightning/JoystickSend.vi"/>
-			<Item Name="Joystick Notifier Set.vi" Type="VI" URL="../Lightning/Joystick Notifier Set.vi"/>
+			<Item Name="Teleop Cmd Recieve.vi" Type="VI" URL="../Lightning/Teleop Cmd Recieve.vi"/>
+			<Item Name="Teleop Cmd Send.vi" Type="VI" URL="../Lightning/Teleop Cmd Send.vi"/>
+			<Item Name="Lightning Teleop.vi" Type="VI" URL="../Lightning/Lightning Teleop.vi"/>
 			<Item Name="Button Notifier Set.vi" Type="VI" URL="../Lightning/Button Notifier Set.vi"/>
 			<Item Name="SolenoidBegin.vi" Type="VI" URL="../Lightning/SolenoidBegin.vi"/>
+			<Item Name="TeleopCmd.ctl" Type="VI" URL="../../dashboard/TeleopCmd.ctl"/>
 		</Item>
 		<Item Name="Documentation" Type="Folder">
 			<Item Name="README.md" Type="Document" URL="../../README.md"/>
 		</Item>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
+		<Item Name="Epsilon Compare.vi" Type="VI" URL="../../dashboard/lightning/Epsilon Compare.vi"/>
+		<Item Name="Teleop Cmd Changed.vi" Type="VI" URL="../../dashboard/lightning/Teleop Cmd Changed.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Image Type" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Image Type"/>
@@ -547,6 +550,10 @@ DirectoryIndex index.htm
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="niLvFpgaFormatErrorSource.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaFormatErrorSource.vi"/>
+			<Item Name="niLvFpgaWhatHappensToTopLevelVI.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaWhatHappensToTopLevelVI.ctl"/>
+			<Item Name="niFpgaNodeNameForErrorReporting.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/niFpgaNodeNameForErrorReporting.ctl"/>
+			<Item Name="niLvFpgaAdjustHostInterfaceError.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaAdjustHostInterfaceError.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
