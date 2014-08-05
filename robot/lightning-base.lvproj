@@ -44,7 +44,6 @@
 		<Property Name="target.FPProtocolGlobals_ControlTimeLimit" Type="Int">300</Property>
 		<Property Name="target.getDefault-&gt;WebServer.Port" Type="Int">80</Property>
 		<Property Name="target.getDefault-&gt;WebServer.Timeout" Type="Int">60</Property>
-		<Property Name="target.IOScan.Enabled" Type="Bool">true</Property>
 		<Property Name="target.IOScan.Faults" Type="Str"></Property>
 		<Property Name="target.IOScan.NetVarPeriod" Type="UInt">100</Property>
 		<Property Name="target.IOScan.NetWatchdogEnabled" Type="Bool">false</Property>
@@ -128,6 +127,8 @@ DirectoryIndex index.htm
 			<Item Name="Elapsed Times.vi" Type="VI" URL="../Elapsed Times.vi"/>
 		</Item>
 		<Item Name="Lightning" Type="Folder">
+			<Item Name="CmdFlag.ctl" Type="VI" URL="../Lightning/CmdFlag.ctl"/>
+			<Item Name="Set Motor Power.vi" Type="VI" URL="../Lightning/Set Motor Power.vi"/>
 			<Item Name="Joystick Begin.vi" Type="VI" URL="../Lightning/Joystick Begin.vi"/>
 			<Item Name="Motor Begin.vi" Type="VI" URL="../Lightning/Motor Begin.vi"/>
 			<Item Name="ButtonRecieve.vi" Type="VI" URL="../Lightning/ButtonRecieve.vi"/>
@@ -140,16 +141,15 @@ DirectoryIndex index.htm
 			<Item Name="TeleopCmd.ctl" Type="VI" URL="../../dashboard/TeleopCmd.ctl"/>
 			<Item Name="Teleop Cmd Changed.vi" Type="VI" URL="../../dashboard/lightning/Teleop Cmd Changed.vi"/>
 			<Item Name="Epsilon Compare.vi" Type="VI" URL="../../dashboard/lightning/Epsilon Compare.vi"/>
+			<Item Name="Drive Train States.ctl" Type="VI" URL="../Lightning/Drive Train States.ctl"/>
+			<Item Name="Lightning Drive Train.vi" Type="VI" URL="../Lightning/Lightning Drive Train.vi"/>
+			<Item Name="teleop drive filter.vi" Type="VI" URL="../Lightning/teleop drive filter.vi"/>
+			<Item Name="joystick deadzone.vi" Type="VI" URL="../Lightning/joystick deadzone.vi"/>
 		</Item>
 		<Item Name="Documentation" Type="Folder">
 			<Item Name="README.md" Type="Document" URL="../../README.md"/>
 		</Item>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
-		<Item Name="Drive Train States.ctl" Type="VI" URL="../Lightning/Drive Train States.ctl"/>
-		<Item Name="Set Motor Power.vi" Type="VI" URL="../Lightning/Set Motor Power.vi"/>
-		<Item Name="Lightning Drive Train.vi" Type="VI" URL="../Lightning/Lightning Drive Train.vi"/>
-		<Item Name="teleop drive filter.vi" Type="VI" URL="../Lightning/teleop drive filter.vi"/>
-		<Item Name="joystick deadzone.vi" Type="VI" URL="../Lightning/joystick deadzone.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Image Type" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Image Type"/>
