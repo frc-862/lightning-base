@@ -148,6 +148,8 @@ DirectoryIndex index.htm
 		<Item Name="Drive Train States.ctl" Type="VI" URL="../Lightning/Drive Train States.ctl"/>
 		<Item Name="Set Motor Power.vi" Type="VI" URL="../Lightning/Set Motor Power.vi"/>
 		<Item Name="Lightning Drive Train.vi" Type="VI" URL="../Lightning/Lightning Drive Train.vi"/>
+		<Item Name="teleop drive filter.vi" Type="VI" URL="../Lightning/teleop drive filter.vi"/>
+		<Item Name="joystick deadzone.vi" Type="VI" URL="../Lightning/joystick deadzone.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Image Type" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Image Type"/>
