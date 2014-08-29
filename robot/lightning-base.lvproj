@@ -44,7 +44,6 @@
 		<Property Name="target.FPProtocolGlobals_ControlTimeLimit" Type="Int">300</Property>
 		<Property Name="target.getDefault-&gt;WebServer.Port" Type="Int">80</Property>
 		<Property Name="target.getDefault-&gt;WebServer.Timeout" Type="Int">60</Property>
-		<Property Name="target.IOScan.Enabled" Type="Bool">true</Property>
 		<Property Name="target.IOScan.Faults" Type="Str"></Property>
 		<Property Name="target.IOScan.NetVarPeriod" Type="UInt">100</Property>
 		<Property Name="target.IOScan.NetWatchdogEnabled" Type="Bool">false</Property>
@@ -128,15 +127,45 @@ DirectoryIndex index.htm
 			<Item Name="Elapsed Times.vi" Type="VI" URL="../Elapsed Times.vi"/>
 		</Item>
 		<Item Name="Lightning" Type="Folder">
-			<Item Name="CmdFlag.ctl" Type="VI" URL="../Lightning/CmdFlag.ctl"/>
-			<Item Name="Set Motor Power.vi" Type="VI" URL="../Lightning/Set Motor Power.vi"/>
-			<Item Name="Joystick Begin.vi" Type="VI" URL="../Lightning/Joystick Begin.vi"/>
-			<Item Name="Motor Begin.vi" Type="VI" URL="../Lightning/Motor Begin.vi"/>
-			<Item Name="ButtonRecieve.vi" Type="VI" URL="../Lightning/ButtonRecieve.vi"/>
-			<Item Name="ButtonSend.vi" Type="VI" URL="../Lightning/ButtonSend.vi"/>
-			<Item Name="Teleop Cmd Recieve.vi" Type="VI" URL="../Lightning/Teleop Cmd Recieve.vi"/>
-			<Item Name="Teleop Cmd Send.vi" Type="VI" URL="../Lightning/Teleop Cmd Send.vi"/>
+			<Item Name="TypeDefs" Type="Folder">
+				<Item Name="CmdFlag.ctl" Type="VI" URL="../Lightning/CmdFlag.ctl"/>
+				<Item Name="TeleopCmd.ctl" Type="VI" URL="../../dashboard/TeleopCmd.ctl"/>
+				<Item Name="Drive Train States.ctl" Type="VI" URL="../Lightning/Drive Train States.ctl"/>
+				<Item Name="Drive Train Metrics.ctl" Type="VI" URL="../Lightning/Drive Train Metrics.ctl"/>
+			</Item>
+			<Item Name="Support" Type="Folder">
+				<Item Name="Set Motor Power.vi" Type="VI" URL="../Lightning/Set Motor Power.vi"/>
+				<Item Name="Joystick Begin.vi" Type="VI" URL="../Lightning/Joystick Begin.vi"/>
+				<Item Name="Motor Begin.vi" Type="VI" URL="../Lightning/Motor Begin.vi"/>
+				<Item Name="ButtonRecieve.vi" Type="VI" URL="../Lightning/ButtonRecieve.vi"/>
+				<Item Name="ButtonSend.vi" Type="VI" URL="../Lightning/ButtonSend.vi"/>
+				<Item Name="Teleop Cmd Recieve.vi" Type="VI" URL="../Lightning/Teleop Cmd Recieve.vi"/>
+				<Item Name="Teleop Cmd Send.vi" Type="VI" URL="../Lightning/Teleop Cmd Send.vi"/>
+				<Item Name="Button Notifier Set.vi" Type="VI" URL="../Lightning/Button Notifier Set.vi"/>
+				<Item Name="SolenoidBegin.vi" Type="VI" URL="../Lightning/SolenoidBegin.vi"/>
+				<Item Name="2D Interpolated Table Lookup.vi" Type="VI" URL="../Lightning/2D Interpolated Table Lookup.vi"/>
+				<Item Name="Teleop Cmd Changed.vi" Type="VI" URL="../../dashboard/lightning/Teleop Cmd Changed.vi"/>
+				<Item Name="Epsilon Compare.vi" Type="VI" URL="../../dashboard/lightning/Epsilon Compare.vi"/>
+				<Item Name="teleop drive filter.vi" Type="VI" URL="../Lightning/teleop drive filter.vi"/>
+				<Item Name="Play Log.vi" Type="VI" URL="../Lightning/Play Log.vi"/>
+				<Item Name="joystick deadzone.vi" Type="VI" URL="../Lightning/joystick deadzone.vi"/>
+				<Item Name="Drivetrain Log Write.vi" Type="VI" URL="../Lightning/Drivetrain Log Write.vi"/>
+				<Item Name="PlaybackOn" Type="VI" URL="../Lightning/PlaybackOn"/>
+				<Item Name="EncoderBegin.vi" Type="VI" URL="../Lightning/EncoderBegin.vi"/>
+				<Item Name="Set Motor Outputs.vi" Type="VI" URL="../Lightning/Set Motor Outputs.vi"/>
+				<Item Name="Drive Train Update Metrics.vi" Type="VI" URL="../Lightning/Drive Train Update Metrics.vi"/>
+				<Item Name="Direction Finder.vi" Type="VI" URL="../Lightning/Direction Finder.vi"/>
+				<Item Name="Do I Downshift.vi" Type="VI" URL="../Lightning/Do I Downshift.vi"/>
+				<Item Name="1D Interpolated Table Lookup.vi" Type="VI" URL="../Lightning/1D Interpolated Table Lookup.vi"/>
+				<Item Name="1D Interpolated Table Lookup Booleen.vi" Type="VI" URL="../Lightning/1D Interpolated Table Lookup Booleen.vi"/>
+				<Item Name="Coastdown.vi" Type="VI" URL="../Lightning/Coastdown.vi"/>
+				<Item Name="Kickdown.vi" Type="VI" URL="../Lightning/Kickdown.vi"/>
+				<Item Name="Am I Turning.vi" Type="VI" URL="../Lightning/Am I Turning.vi"/>
+				<Item Name="Upshift.vi" Type="VI" URL="../Lightning/Upshift.vi"/>
+				<Item Name="Do I Upshift.vi" Type="VI" URL="../Lightning/Do I Upshift.vi"/>
+			</Item>
 			<Item Name="Lightning Teleop.vi" Type="VI" URL="../Lightning/Lightning Teleop.vi"/>
+<<<<<<< Updated upstream
 			<Item Name="Button Notifier Set.vi" Type="VI" URL="../Lightning/Button Notifier Set.vi"/>
 			<Item Name="SolenoidBegin.vi" Type="VI" URL="../Lightning/SolenoidBegin.vi"/>
 			<Item Name="TeleopCmd.ctl" Type="VI" URL="../../dashboard/TeleopCmd.ctl"/>
@@ -146,11 +175,15 @@ DirectoryIndex index.htm
 			<Item Name="Lightning Drive Train.vi" Type="VI" URL="../Lightning/Lightning Drive Train.vi"/>
 			<Item Name="teleop drive filter.vi" Type="VI" URL="../Lightning/teleop drive filter.vi"/>
 			<Item Name="joystick deadzone.vi" Type="VI" URL="../Lightning/joystick deadzone.vi"/>
+=======
+			<Item Name="Lightning Drive Train.vi" Type="VI" URL="../Lightning/Lightning Drive Train.vi"/>
+>>>>>>> Stashed changes
 		</Item>
 		<Item Name="Documentation" Type="Folder">
 			<Item Name="README.md" Type="Document" URL="../../README.md"/>
 		</Item>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
+		<Item Name="Drive Train Loop Speed.vi" Type="VI" URL="../Lightning/Drive Train Loop Speed.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Image Type" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Image Type"/>
@@ -566,10 +599,14 @@ DirectoryIndex index.htm
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+<<<<<<< Updated upstream
 			<Item Name="niLvFpgaFormatErrorSource.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaFormatErrorSource.vi"/>
 			<Item Name="niLvFpgaWhatHappensToTopLevelVI.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaWhatHappensToTopLevelVI.ctl"/>
 			<Item Name="niFpgaNodeNameForErrorReporting.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/niFpgaNodeNameForErrorReporting.ctl"/>
 			<Item Name="niLvFpgaAdjustHostInterfaceError.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaAdjustHostInterfaceError.vi"/>
+=======
+			<Item Name="ExponentialAve.vi" Type="VI" URL="../Lightning/ExponentialAve.vi"/>
+>>>>>>> Stashed changes
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
