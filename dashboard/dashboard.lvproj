@@ -24,6 +24,8 @@
 		<Item Name="Dashboard Main.vi" Type="VI" URL="../Dashboard Main.vi"/>
 		<Item Name="refnum2string.vi" Type="VI" URL="../lightning/refnum2string.vi"/>
 		<Item Name="string2refnum.vi" Type="VI" URL="../lightning/string2refnum.vi"/>
+		<Item Name="TabTypeDef.ctl" Type="VI" URL="../../robot/Lightning/TabTypeDef.ctl"/>
+		<Item Name="Control 2.ctl" Type="VI" URL="../../robot/Lightning/Control 2.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="IMAQ Create" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ Create"/>
@@ -217,7 +219,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Program Files (x86)/FRC Dashboard</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{F12754D6-B5E0-496F-B50C-3EDB6F368199}</Property>
-				<Property Name="Bld_version.build" Type="Int">12</Property>
+				<Property Name="Bld_version.build" Type="Int">20</Property>
 				<Property Name="Bld_version.major" Type="Int">5</Property>
 				<Property Name="Destination[0].destName" Type="Str">Dashboard.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/Program Files (x86)/FRC Dashboard/NI_AB_PROJECTNAME.exe</Property>
