@@ -163,6 +163,8 @@ DirectoryIndex index.htm
 				<Item Name="Am I Turning.vi" Type="VI" URL="../Lightning/Am I Turning.vi"/>
 				<Item Name="Upshift.vi" Type="VI" URL="../Lightning/Upshift.vi"/>
 				<Item Name="Do I Upshift.vi" Type="VI" URL="../Lightning/Do I Upshift.vi"/>
+				<Item Name="Drive Train Loop Speed.vi" Type="VI" URL="../Lightning/Drive Train Loop Speed.vi"/>
+				<Item Name="Drive Train Logger.vi" Type="VI" URL="../Lightning/Drive Train Logger.vi"/>
 			</Item>
 			<Item Name="Lightning Teleop.vi" Type="VI" URL="../Lightning/Lightning Teleop.vi"/>
 			<Item Name="Lightning Drive Train.vi" Type="VI" URL="../Lightning/Lightning Drive Train.vi"/>
@@ -171,8 +173,6 @@ DirectoryIndex index.htm
 			<Item Name="README.md" Type="Document" URL="../../README.md"/>
 		</Item>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
-		<Item Name="Drive Train Loop Speed.vi" Type="VI" URL="../Lightning/Drive Train Loop Speed.vi"/>
-		<Item Name="Drive Train Logger.vi" Type="VI" URL="../Lightning/Drive Train Logger.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Image Type" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Image Type"/>
@@ -653,10 +653,6 @@ DirectoryIndex index.htm
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="ExponentialAve.vi" Type="VI" URL="../Lightning/ExponentialAve.vi"/>
-			<Item Name="niLvFpgaFormatErrorSource.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaFormatErrorSource.vi"/>
-			<Item Name="niLvFpgaWhatHappensToTopLevelVI.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaWhatHappensToTopLevelVI.ctl"/>
-			<Item Name="niFpgaNodeNameForErrorReporting.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/niFpgaNodeNameForErrorReporting.ctl"/>
-			<Item Name="niLvFpgaAdjustHostInterfaceError.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaAdjustHostInterfaceError.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
